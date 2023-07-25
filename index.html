@@ -29,7 +29,13 @@
                     colors: {
                         'btn-color': '#B68C5A',
                         'text-dark': '#414040',
-                    }
+                    },
+                    backgroundImage: {
+                        'slider-1': "url('./images/slider-1.jpg')",
+                        'slider-2': "url('./images/slider-2.jpg')",
+                        'slider-3': "url('./images/slider-3.jpg')",
+                        'banner-bg': "url('./images/banner.png')",
+                    },
                 }
             }
         }
@@ -93,8 +99,8 @@
         </nav>
         <!-- bnner part -->
         <div class="container mx-auto">
-            <div class="hero mt-10 rounded-lg" style="background-image: url(./images/banner.png);">
-                <div class="hero-overlay bg-opacity-20"></div>
+            <div class="hero mt-10 rounded-lg bg-banner-bg">
+                <div class="hero-overlay bg-opacity-40"></div>
                 <div class="hero-content text-center text-neutral-content py-24">
                     <div class=" md:max-w-md lg:max-w-lg space-y-5">
                         <h1 class="mb-5 text-3xl md:text-4xl lg:text-5xl font-extrabold font-garmond">We Provide
@@ -126,9 +132,10 @@
                 alteration in some form, by injected humour.
             </p>
             <!-- section container -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:mx-4 lg:mx-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  md:mx-4 lg:mx-0">
                 <!-- first card -->
-                <div class="card bg-gradient-to-r from-[#F3F3F3] to-orange-50 border-1 rounded-none">
+                <div
+                    class="card bg-gradient-to-r from-[#F3F3F3] to-neutral-200 border-r border-b border-gray-400 rounded-none">
                     <figure class="px-10 pt-10">
                         <img src="./images/business.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -145,7 +152,8 @@
                     </div>
                 </div>
                 <!-- second card -->
-                <div class="card bg-gradient-to-r from-[#F3F3F3] to-orange-50 border-1 rounded-none">
+                <div
+                    class="card bg-gradient-to-r from-[#F3F3F3] to-neutral-200 border-r border-b border-gray-400  rounded-none">
                     <figure class="px-10 pt-10">
                         <img src="./images/tax.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -162,7 +170,7 @@
                     </div>
                 </div>
                 <!-- third card -->
-                <div class="card bg-gradient-to-r from-[#F3F3F3] to-orange-50 border-1 rounded-none">
+                <div class="card bg-gradient-to-r from-[#F3F3F3] to-neutral-200 border-b border-gray-400  rounded-none">
                     <figure class="px-10 pt-10">
                         <img src="./images/divorce.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -179,7 +187,7 @@
                     </div>
                 </div>
                 <!-- four card -->
-                <div class="card bg-gradient-to-r from-[#F3F3F3] to-orange-50 border-1 rounded-none">
+                <div class="card bg-gradient-to-r from-[#F3F3F3] to-neutral-200 border-r border-gray-400  rounded-none">
                     <figure class="px-10 pt-10">
                         <img src="./images/education.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -196,7 +204,7 @@
                     </div>
                 </div>
                 <!-- five card -->
-                <div class="card bg-gradient-to-r from-[#F3F3F3] to-orange-50 border-1 rounded-none">
+                <div class="card bg-gradient-to-r from-[#F3F3F3] to-neutral-200 border-r border-gray-400  rounded-none">
                     <figure class="px-10 pt-10">
                         <img src="./images/child.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -213,7 +221,7 @@
                     </div>
                 </div>
                 <!-- six card -->
-                <div class="card bg-gradient-to-r from-[#F3F3F3] to-orange-50 border-1 rounded-none">
+                <div class="card bg-gradient-to-r from-[#F3F3F3] to-neutral-200  border-gray-400  rounded-none">
                     <figure class="px-10 pt-10">
                         <img src="./images/criminal.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -239,7 +247,235 @@
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                 alteration in some form, by injected humour.
             </p>
+            <!-- carousel -->
+            <div class="carousel h-[500px] mx-5 md:mx-0">
+                <!-- slider1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./images/slider-1.jpg" class="w-full" />
+                    <div class="absolute top-0 left-0 h-full w-full opacity-80 flex justify-center items-center">
+                        <div class="text-white text-sm max-w-lg mx-auto text-center space-y-3 pb-5">
+                            <div class="flex justify-center">
+                                <img src="./images/business.png" alt="" class="">
+                            </div>
+                            <h2 class="text-3xl text-white font-bold font-garmond">Jubayer Sarker</h2>
+                            <p class="font-bold">Web Developer</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi rem cum molestiae
+                                mollitia quos tempora soluta hic temporibus dolor quas? Minima eaque voluptatum dolorem
+                                optio quibusdam, et dolor ullam, deserunt ea fugit ipsam hic alias blanditiis culpa
+                                laborum at laboriosam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./images/slider-2.jpg" class="w-full" />
+                    <div class="absolute top-0 left-0 h-full w-full opacity-80 flex justify-center items-center">
+                        <div class="text-white text-sm max-w-lg mx-auto text-center space-y-3 pb-5">
+                            <div class="flex justify-center">
+                                <img src="./images/business.png" alt="" class="">
+                            </div>
+                            <h2 class="text-3xl text-white font-bold font-garmond">Jubayer Sarker</h2>
+                            <p class="font-bold">Web Developer</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi rem cum molestiae
+                                mollitia quos tempora soluta hic temporibus dolor quas? Minima eaque voluptatum dolorem
+                                optio quibusdam, et dolor ullam, deserunt ea fugit ipsam hic alias blanditiis culpa
+                                laborum at laboriosam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./images/slider-3.jpg" class="w-full" />
+                    <div class="absolute top-0 left-0 h-full w-full opacity-80 flex justify-center items-center">
+                        <div class="text-white text-sm max-w-lg mx-auto text-center space-y-3 pb-5">
+                            <div class="flex justify-center">
+                                <img src="./images/business.png" alt="" class="">
+                            </div>
+                            <h2 class="text-3xl text-white font-bold font-garmond">Jubayer Sarker</h2>
+                            <p class="font-bold">Web Developer</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi rem cum molestiae
+                                mollitia quos tempora soluta hic temporibus dolor quas? Minima eaque voluptatum dolorem
+                                optio quibusdam, et dolor ullam, deserunt ea fugit ipsam hic alias blanditiis culpa
+                                laborum at laboriosam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./images/slider-1.jpg" class="w-full" />
+                    <div class="absolute top-0 left-0 h-full w-full opacity-80 flex justify-center items-center">
+                        <div class="text-white text-sm max-w-lg mx-auto text-center space-y-3 pb-5">
+                            <div class="flex justify-center">
+                                <img src="./images/business.png" alt="" class="">
+                            </div>
+                            <h2 class="text-3xl text-white font-bold font-garmond">Jubayer Sarker</h2>
+                            <p class="font-bold">Web Developer</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi rem cum molestiae
+                                mollitia quos tempora soluta hic temporibus dolor quas? Minima eaque voluptatum dolorem
+                                optio quibusdam, et dolor ullam, deserunt ea fugit ipsam hic alias blanditiis culpa
+                                laborum at laboriosam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- FAQ section -->
+        <section class="my-24">
+            <h3 class="font-garmond text-4xl text-dark font-extrabold text-center">Frequently Asked Any Questions</h3>
+            <p class="text-gray-500 text-center max-w-screen-sm mx-auto mt-5 mb-10 px-4">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour.
+            </p>
+            <!-- section container -->
+            <div class="flex flex-col md:flex-row gap-8 lg:gap-x-12 items-center mx-5 md:mx-0">
+                <!-- left-side -->
+                <div class="flex-1 space-y-4 ">
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold font-garmond">
+                            1. Are application fee waivers available?
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-sm text-gray-400">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold font-garmond">
+                            1. Are application fee waivers available?
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-sm text-gray-400">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold font-garmond">
+                            1. Are application fee waivers available?
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-sm text-gray-400">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold font-garmond">
+                            1. Are application fee waivers available?
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-sm text-gray-400">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side -->
+                <dir class="flex-1">
+                    <img src="./images/faq.png" class="w-3/4" alt="">
+                </dir>
+            </div>
+        </section>
+        <!-- contact section -->
+        <section class="my-24">
+            <h3 class="font-garmond text-4xl text-dark font-extrabold text-center">Contact With Us</h3>
+            <p class="text-gray-500 text-center max-w-screen-sm mx-auto mt-5 mb-10 px-4">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour.
+            </p>
+            <!-- section container -->
+            <div class="flex flex-col md:flex-row gap-8 mx-4 md:mx-0">
+                <!-- left side -->
+                <div class="flex-1 grid grid-cols-2">
+                    <div class="px-5 py-7 text-center border-gray-400 bg-neutral-300 border-r border-b space-y-5">
+                        <div class="flex justify-center">
+                            <img src="./images/address.png" alt="">
+                        </div>
+                        <h3 class="text-xl text-black font-garmond font-bold">Address</h3>
+                        <p class="text-sm text-gray-400">
+                            A108 Adam Street,<br>
+                            New York, NY 535022
+                        </p>
+                    </div>
+                    <div class="px-5 py-7 text-center border-gray-400 bg-neutral-300 border-b space-y-5">
+                        <div class="flex justify-center">
+                            <img src="./images/call.png" alt="">
+                        </div>
+                        <h3 class="text-xl text-black font-garmond font-bold">Call Us</h3>
+                        <p class="text-sm text-gray-400">
+                            +88 01750 00 00 00 <br>
+                            +88 01750 00 00 00
+                        </p>
+                    </div>
+                    <div class="px-5 py-7 text-center border-gray-400 bg-neutral-300 border-r space-y-5">
+                        <div class="flex justify-center">
+                            <img src="./images/email.png" alt="">
+                        </div>
+                        <h3 class="text-xl text-black font-garmond font-bold">Email Us</h3>
+                        <p class="text-sm text-gray-400">
+                            info@gmail.com <br>
+                            info@gmail.com
+                        </p>
+                    </div>
+                    <div class="px-5 py-7 text-center border-gray-400 bg-neutral-300 space-y-5">
+                        <div class="flex justify-center">
+                            <img src="./images/time.png" alt="">
+                        </div>
+                        <h3 class="text-xl text-black font-garmond font-bold">Working Hours</h3>
+                        <p class="text-sm text-gray-400">
+                            Mon-Fri: 9AM to 5PM <br>
+                            Sunday: 9AM to 1 PM
+                        </p>
+                    </div>
+                </div>
+                <!-- right side -->
+                <div class="flex-1">
+                    <form class="space-y-4">
+                        <input class="form-input block w-full px-5 py-4 bg-neutral-300 rounded-lg" type="text" placeholder="Your full name" required />
+                        <input class="form-input block w-full px-5 py-4 bg-neutral-300 rounded-lg" type="email" placeholder="Ex. james@bond.com" inputmode="email"
+                            required />
+                        <input class="form-input block w-full px-5 py-4 bg-neutral-300 rounded-lg" type="password" placeholder="••••••••" required />
+                        <textarea name="" id="" cols="10" rows="5" class="block w-full bg-neutral-300 px-5 py-4 rounded-lg">Message</textarea>
+                        <input type="submit " class="w-full bg-btn-color text-white rounded-lg block px-5 py-5" value="Send Message" />
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- footer part -->
