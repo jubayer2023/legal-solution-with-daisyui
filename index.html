@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -16,13 +16,18 @@
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- fontaawesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- tailwind custom css link -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'btn-color': '#B68C5A',
                     }
                 }
             }
@@ -34,7 +39,8 @@
         .font-poppins {
             font-family: 'Poppins', sans-serif;
         }
-        .font-garmond{
+
+        .font-garmond {
             font-family: 'EB Garamond', serif;
         }
     </style>
@@ -42,13 +48,85 @@
 
 <body>
     <!-- header part -->
-    <header>
-
+    <header class="font-poppins">
+        <!-- navbar -->
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <!-- dropdown box -->
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Cases</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- logo -->
+                    <div class="flex">
+                        <img src="./images/logo2.png" class="text-black w-full" alt="">
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-gray-400 flex items-center">
+                        <li><a>Home</a></li>
+                        <li><a>Services<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Cases<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Blog<i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Contact Us<i class="fa-solid fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-btn-color text-white font-medium capitalize">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+        <!-- bnner part -->
+        <div class="container mx-auto">
+            <div class="hero mt-10 rounded-lg" style="background-image: url(./images/banner.png);">
+                <div class="hero-overlay bg-opacity-20"></div>
+                <div class="hero-content text-center text-neutral-content py-24">
+                    <div class=" md:max-w-md lg:max-w-lg space-y-5">
+                        <h1 class="mb-5 text-3xl md:text-4xl lg:text-5xl font-extrabold font-garmond">We Provide Effective
+                            Legal Solutions</h1>
+                        <p class="mb-5 text-sm text-gray-400">There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <div>
+                            <form class="flex flex-col justify-center items-center md:flex-row gap-4">
+                                <input class="text-sm text-gray-300 bg-white w-3/4 py-4 px-4 rounded-lg" type="text"
+                                    placeholder="Enter Your Services.">
+                                <button class="bg-btn-color w-1/4 py-4 rounded-lg font-medium">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <!-- main part -->
-    <main>
 
+    <!-- main part -->
+    <main class="container mx-auto">
+        <!-- Legal Practice Section -->
+        <section>
+           <div class="text-center">
+            <h3 class="font-garmond text-5xl text-black font-extrabold">The Legal Practice Area</h3>
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour.
+            </p>
+           </div>
+        </section>
     </main>
+
     <!-- footer part -->
     <footer>
 
